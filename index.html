@@ -123,8 +123,6 @@
                 
                 <div class="flex flex-col space-y-1">
                     <h1 class="text-xl font-bold text-gray-900">SUZI (KOBEDENSHI AI)</h1>
-                    
-                    <span id="user-info-status" class="text-xs text-gray-500 hidden md:block">Loading Authentication...</span>
                 </div>
             </div>
             
@@ -602,10 +600,7 @@ ${conversationText}
                 // 🧩 STEP 5: Show Menu Button
                 menuBtn.classList.remove("hidden");
                 
-                // Ensure userId exists before displaying
-                if (userId) {
-                     userInfoStatusSpan.textContent = `Student ID: ${userId.substring(0, 8)}... (Authenticated)`;
-                }
+               
                 userInfoStatusSpan.classList.remove('hidden');
 
             } else {
